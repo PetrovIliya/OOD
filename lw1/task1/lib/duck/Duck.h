@@ -3,6 +3,7 @@
 
 #include "../fly/IFlyBehavior.h"
 #include "../quak/IQuackBehavior.h"
+#include "../dance/IDanceStrategy.h"
 
 #include <memory>
 
@@ -10,7 +11,7 @@ class Duck
 {
 public:
 
-    Duck(std::unique_ptr<IFlyBehavior>&& flyBehavior, std::unique_ptr<IQuackBehavior>&& quackBehavior);
+    Duck(std::unique_ptr<IFlyBehavior> && flyBehavior, std::unique_ptr<IQuackBehavior> && quackBehavior, std::unique_ptr<IDanceStrategy>&& danceStrategy);
 
     void Quack() const;
 
@@ -28,6 +29,7 @@ public:
 private:
     std::unique_ptr<IFlyBehavior> m_flyBehavior;
     std::unique_ptr<IQuackBehavior> m_quackBehavior;
+    std::unique_ptr<IDanceStrategy> m_danceStrategy;
 };
 
 

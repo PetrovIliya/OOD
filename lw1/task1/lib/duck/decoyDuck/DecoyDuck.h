@@ -11,7 +11,8 @@ public:
 
     void Display() const override;
 
-    void Dance() override;
+private:
+
 };
 
 

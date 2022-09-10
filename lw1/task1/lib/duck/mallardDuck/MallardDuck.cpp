@@ -2,8 +2,9 @@
 #include "MallardDuck.h"
 #include "FlyWithWings.h"
 #include "QuackBehavior.h"
+#include "../../dance/waltzDanceStrategy/WaltzDanceStrategy.h"
 
-MallardDuck::MallardDuck(): Duck(std::make_unique<FlyWithWings>(), std::make_unique<QuackBehavior>())
+MallardDuck::MallardDuck(): Duck(std::make_unique<FlyWithWings>(), std::make_unique<QuackBehavior>(), std::make_unique<WaltzDanceStrategy>())
 {
 }
 

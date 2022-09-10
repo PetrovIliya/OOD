@@ -9,8 +9,6 @@ public:
     ModelDuck();
 
     void Display() const override;
-
-    void Dance() override;
 };
 
 

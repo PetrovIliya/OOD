@@ -3,9 +3,9 @@
 #include "RedheadDuck.h"
 #include "FlyWithWings.h"
 #include "QuackBehavior.h"
+#include "../../dance/minuetDanceStrategy/MinuetDanceStrategy.h"
 
-RedheadDuck::RedheadDuck()
-        : Duck(std::make_unique<FlyWithWings>(), std::make_unique<QuackBehavior>())
+RedheadDuck::RedheadDuck() : Duck(std::make_unique<FlyWithWings>(), std::make_unique<QuackBehavior>(), std::make_unique<MinuetDanceStrategy>())
 {
 }
 

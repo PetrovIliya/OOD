@@ -3,7 +3,7 @@
 
 struct IQuackBehavior
 {
-    virtual ~IQuackBehavior(){};
+    virtual ~IQuackBehavior() = default;
     virtual void Quack() = 0;
 };
 

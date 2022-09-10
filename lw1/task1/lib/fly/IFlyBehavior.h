@@ -3,7 +3,7 @@
 
 struct IFlyBehavior
 {
-    virtual ~IFlyBehavior(){};
+    virtual ~IFlyBehavior() = default;
     virtual void Fly() = 0;
 };
 
