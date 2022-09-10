@@ -3,5 +3,6 @@
 
 void FlyWithWings::Fly()
 {
-    std::cout << "I'm flying with wings!!" << std::endl;
+    m_flyCount++;
+    std::cout << "I'm flying with wings!! Count: " << m_flyCount << std::endl;
 }

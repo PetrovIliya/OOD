@@ -42,6 +42,5 @@ add_executable(task1
         lib/quak/squeakBehavior/SqueakBehavior.cpp
         lib/quak/squeakBehavior/SqueakBehavior.h
         lib/quak/IQuackBehavior.h
-        lib/SimUDuck.cpp
         main.cpp lib/dance/IDanceStrategy.h lib/dance/cantDanceStrategy/CantDanceStrategy.cpp lib/dance/cantDanceStrategy/CantDanceStrategy.h
         lib/dance/minuetDanceStrategy/MinuetDanceStrategy.cpp lib/dance/minuetDanceStrategy/MinuetDanceStrategy.h lib/dance/waltzDanceStrategy/WaltzDanceStrategy.cpp lib/dance/waltzDanceStrategy/WaltzDanceStrategy.h)

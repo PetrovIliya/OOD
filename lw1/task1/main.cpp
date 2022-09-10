@@ -24,6 +24,7 @@ int main()
 {
     MallardDuck mallardDuck;
     PlayWithDuck(mallardDuck);
+    PlayWithDuck(mallardDuck);
 
     RedheadDuck redheadDuck;
     PlayWithDuck(redheadDuck);
