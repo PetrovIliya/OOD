@@ -1,21 +1,11 @@
-
-#include <iostream>
 #include "StatsDisplay.h"
 
 void StatsDisplay::Update(const WeatherInfo &data) {
-    if (m_minTemperature > data.temperature)
-    {
-        m_minTemperature = data.temperature;
-    }
-    if (m_maxTemperature < data.temperature)
-    {
-        m_maxTemperature = data.temperature;
-    }
-    m_accTemperature += data.temperature;
-    ++m_countAcc;
+    m_temperatureView.UpdateStats(data.temperature);
+    m_humidityView.UpdateStats(data.humidity);
+    m_pressureView.UpdateStats(data.pressure);
 
-    std::cout << "Max Temp " << m_maxTemperature << std::endl;
-    std::cout << "Min Temp " << m_minTemperature << std::endl;
-    std::cout << "Average Temp " << (m_accTemperature / m_countAcc) << std::endl;
-    std::cout << "----------------" << std::endl;
+    m_temperatureView.DisplayStats();
+    m_humidityView.DisplayStats();
+    m_pressureView.DisplayStats();
 }

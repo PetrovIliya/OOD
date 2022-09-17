@@ -3,22 +3,19 @@
 
 #include "../../weatherData/WeatherInfo.h"
 #include "../IObserver.h"
+#include "../../measurementStatsView/MeasurementStatsView.h"
 #include <algorithm>
 #include <climits>
+#include <memory>
 
 class StatsDisplay : public IObserver<WeatherInfo>
 {
 private:
-    /* Метод Update сделан приватным, чтобы ограничить возможность его вызова напрямую
-    Классу CObservable он будет доступен все равно, т.к. в интерфейсе IObserver он
-    остается публичным
-    */
     void Update(WeatherInfo const& data) override;
 
-    double m_minTemperature = std::numeric_limits<double>::infinity();
-    double m_maxTemperature = -std::numeric_limits<double>::infinity();
-    double m_accTemperature = 0;
-    unsigned m_countAcc = 0;
+    MeasurementStatsView m_temperatureView = MeasurementStatsView("Temperature");;
+    MeasurementStatsView m_humidityView = MeasurementStatsView("Humidity");
+    MeasurementStatsView m_pressureView = MeasurementStatsView("Pressure");
 };
 
 #endif //LW2_STATSDISPLAY_H

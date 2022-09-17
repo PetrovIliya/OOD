@@ -9,4 +9,4 @@ add_executable(
         lib/observable/IObservable.h
         lib/observers/IObserver.h
         lib/observable/BaseObservable.hpp
-        lib/weatherData/WeatherData.cpp lib/weatherData/WeatherData.h lib/weatherData/WeatherInfo.h lib/observers/statsDisplay/StatsDisplay.cpp lib/observers/statsDisplay/StatsDisplay.h lib/observers/display/Display.cpp lib/observers/display/Display.h)
+        lib/weatherData/WeatherData.cpp lib/weatherData/WeatherData.h lib/weatherData/WeatherInfo.h lib/observers/statsDisplay/StatsDisplay.cpp lib/observers/statsDisplay/StatsDisplay.h lib/observers/display/Display.cpp lib/observers/display/Display.h lib/measurementStatsView/MeasurementStatsView.cpp lib/measurementStatsView/MeasurementStatsView.h)
