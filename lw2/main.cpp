@@ -8,10 +8,10 @@ int main()
     WeatherData wd;
 
     Display display;
-    wd.RegisterObserver(display);
+    wd.RegisterObserver(display, 2);
 
     StatsDisplay statsDisplay;
-    wd.RegisterObserver(statsDisplay);
+    wd.RegisterObserver(statsDisplay, 1);
 
     wd.SetMeasurements(3, 0.7, 760);
     wd.SetMeasurements(4, 0.8, 761);
