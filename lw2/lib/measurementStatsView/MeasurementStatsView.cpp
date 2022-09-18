@@ -1,8 +1,11 @@
 #include "MeasurementStatsView.h"
+
+#include <utility>
 #include "iostream"
 
-MeasurementStatsView::MeasurementStatsView(std::string statsLabel) {
-    m_statsLabel = statsLabel;
+MeasurementStatsView::MeasurementStatsView(std::string statsLabel)
+{
+    m_statsLabel = std::move(statsLabel);
 }
 
 void MeasurementStatsView::UpdateStats(double value) {

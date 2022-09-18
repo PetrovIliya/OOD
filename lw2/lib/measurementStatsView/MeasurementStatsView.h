@@ -8,7 +8,7 @@
 
 class MeasurementStatsView {
 public:
-    MeasurementStatsView(std::string statsLabel);
+    explicit MeasurementStatsView(std::string statsLabel);
 
     void UpdateStats(double value);
 
