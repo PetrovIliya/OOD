@@ -1,14 +1,14 @@
-#ifndef LW2_MEASUREMENTSTATSVIEW_H
-#define LW2_MEASUREMENTSTATSVIEW_H
+#ifndef LW2_STATSVIEW_H
+#define LW2_STATSVIEW_H
 
 #include "../weatherData/WeatherInfo.h"
 #include <algorithm>
 #include <climits>
 #include <string>
 
-class MeasurementStatsView {
+class StatsView {
 public:
-    explicit MeasurementStatsView(std::string statsLabel);
+    explicit StatsView(std::string statsLabel);
 
     void UpdateStats(double value);
 
@@ -23,4 +23,4 @@ private:
     std::string m_statsLabel;
 };
 
-#endif //LW2_MEASUREMENTSTATSVIEW_H
+#endif //LW2_STATSVIEW_H

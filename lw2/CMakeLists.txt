@@ -16,11 +16,11 @@ add_executable(
         lib/observers/statsDisplay/StatsDisplay.h
         lib/observers/display/Display.cpp
         lib/observers/display/Display.h
-        lib/measurementStatsView/MeasurementStatsView.cpp
-        lib/measurementStatsView/MeasurementStatsView.h
+        lib/statsView/StatsView.cpp
+        lib/statsView/StatsView.h
         test/lib/TestSelfDeleteObserver.h
         test/lib/TestPriorityObserver.h
-)
+        weatherStationPro/lib/weatherDataPro/WeatherDataPro.cpp weatherStationPro/lib/weatherDataPro/WeatherDataPro.h)
 
 # tests
 find_package(Catch2 3 REQUIRED)
@@ -36,8 +36,8 @@ add_executable(tests
         lib/observers/statsDisplay/StatsDisplay.h
         lib/observers/display/Display.cpp
         lib/observers/display/Display.h
-        lib/measurementStatsView/MeasurementStatsView.cpp
-        lib/measurementStatsView/MeasurementStatsView.h
+        lib/statsView/StatsView.cpp
+        lib/statsView/StatsView.h
         test/lib/TestSelfDeleteObserver.h
         test/lib/TestPriorityObserver.h
         weatherStationDuo/lib/WeatherStationDuo.hpp
@@ -60,7 +60,26 @@ add_executable(weatherStationDuo
     lib/observers/statsDisplay/StatsDisplay.h
     lib/observers/display/Display.cpp
     lib/observers/display/Display.h
-    lib/measurementStatsView/MeasurementStatsView.cpp
-    lib/measurementStatsView/MeasurementStatsView.h
+        lib/statsView/StatsView.cpp
+        lib/statsView/StatsView.h
     weatherStationDuo/main.cpp weatherStationDuo/lib/WeatherStationDuo.hpp
 )
+
+# weatherStationPro
+
+add_executable(weatherStationPro
+        lib/observable/IObservable.h
+        lib/observers/IObserver.h
+        lib/observable/BaseObservable.hpp
+        lib/weatherData/WeatherInfo.h
+        lib/observers/statsDisplay/StatsDisplay.cpp
+        lib/observers/statsDisplay/StatsDisplay.h
+        lib/observers/display/Display.cpp
+        lib/observers/display/Display.h
+        lib/statsView/StatsView.cpp
+        lib/statsView/StatsView.h
+        weatherStationPro/main.cpp
+        weatherStationPro/lib/weatherDataPro/WeatherDataPro.cpp weatherStationPro/lib/weatherDataPro/WeatherDataPro.h weatherStationPro/lib/WeatherProInfo.h
+        weatherStationPro/lib/observers/statsDisplayPro/StatsDisplayPro.cpp
+        weatherStationPro/lib/observers/statsDisplayPro/StatsDisplayPro.h
+        weatherStationPro/lib/angleStatsView/AngleStatsView.cpp weatherStationPro/lib/angleStatsView/AngleStatsView.h)

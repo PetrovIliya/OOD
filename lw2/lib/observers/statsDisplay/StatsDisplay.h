@@ -3,7 +3,7 @@
 
 #include "../../weatherData/WeatherInfo.h"
 #include "../IObserver.h"
-#include "../../measurementStatsView/MeasurementStatsView.h"
+#include "../../statsView/StatsView.h"
 #include <algorithm>
 #include <climits>
 #include <memory>
@@ -13,9 +13,9 @@ class StatsDisplay : public IObserver<WeatherInfo>
 private:
     void Update(WeatherInfo const& data) override;
 
-    MeasurementStatsView m_temperatureView = MeasurementStatsView("Temperature");;
-    MeasurementStatsView m_humidityView = MeasurementStatsView("Humidity");
-    MeasurementStatsView m_pressureView = MeasurementStatsView("Pressure");
+    StatsView m_temperatureView = StatsView("Temperature");;
+    StatsView m_humidityView = StatsView("Humidity");
+    StatsView m_pressureView = StatsView("Pressure");
 };
 
 #endif //LW2_STATSDISPLAY_H
