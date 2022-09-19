@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.16)
 project(task3)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -9,5 +9,5 @@ add_executable(
     task3
     lib/duck/Duck.cpp
     lib/duck/Duck.h
-    main.cpp lib/Quack.cpp lib/Fly.cpp lib/Dance.cpp lib/Display.cpp
+    main.cpp lib/Quack.hpp lib/Fly.hpp lib/Dance.hpp lib/Display.hpp
 )

@@ -11,6 +11,7 @@ Duck::Duck(std::unique_ptr<IFlyBehavior>&& flyBehavior,
 {
     assert(m_quackBehavior);
     SetFlyBehavior(std::move(flyBehavior));
+    // fix construct
 }
 
 void Duck::Quack() const

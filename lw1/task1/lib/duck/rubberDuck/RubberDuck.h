@@ -1,7 +1,7 @@
 #ifndef OOD_RUBBERDUCK_H
 #define OOD_RUBBERDUCK_H
 
-#include "Duck.h"
+#include "../Duck.h"
 
 
 class RubberDuck : public Duck

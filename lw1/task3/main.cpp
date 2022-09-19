@@ -1,9 +1,9 @@
 #include "iostream"
 #include "Duck.h"
-#include "lib/Dance.cpp"
-#include "lib/Fly.cpp"
-#include "lib/Quack.cpp"
-#include "lib/Display.cpp"
+#include "lib/Dance.hpp"
+#include "lib/Fly.hpp"
+#include "lib/Quack.hpp"
+#include "lib/Display.hpp"
 
 void DrawDuck(Duck &duck)
 {
@@ -21,7 +21,7 @@ void PlayWithDuck(Duck& duck)
 
 int main()
 {
-    Duck mallardDuck(MallardDuckDisplay, FlyWithWings(), Quack, Waltz);
+    Duck mallardDuck(MallardDuckDisplay, Quack, FlyWithWings(), Waltz);
     PlayWithDuck(mallardDuck);
 
     Duck redheadDuck(RedheadDuckDisplay, FlyWithWings(), Quack, Minuet);

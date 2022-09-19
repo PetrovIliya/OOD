@@ -4,7 +4,7 @@
 class IDanceStrategy
 {
 public:
-    virtual ~IDanceStrategy() = default;;
+    virtual ~IDanceStrategy() = default;
     virtual void Dance() = 0;
 };
 

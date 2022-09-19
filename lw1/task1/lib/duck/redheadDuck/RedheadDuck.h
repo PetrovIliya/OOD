@@ -1,7 +1,7 @@
 #ifndef OOD_REDHEADDUCK_H
 #define OOD_REDHEADDUCK_H
 
-#include "Duck.h"
+#include "../Duck.h"
 
 class RedheadDuck : public Duck
 {
