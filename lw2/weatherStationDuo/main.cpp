@@ -1,15 +1,15 @@
-#include "lib/WeatherStationDuo.hpp"
 #include "../lib/observers/display/Display.h"
-#include "../lib/observers/statsDisplay/StatsDisplay.h"
+#include "lib/WeatherStationDuo.hpp"
+#include "lib/observer/statsDisplay//WeatherStationDisplay.h"
 
 int main()
 {
-    WeatherStationDuo ws;
+	WeatherStationData insideData;
+	WeatherStationData outsideData;
 
-    Display display;
-    ws.RegisterObserver(display, 2);
+    WeatherStationDuo ws(insideData, outsideData);
 
-    StatsDisplay statsDisplay;
+	WeatherStationDisplay statsDisplay;
     ws.RegisterObserver(statsDisplay, 1);
 
     ws.GetInsideData().SetMeasurements(3, 0.7, 760);

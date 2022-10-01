@@ -41,6 +41,8 @@ add_executable(tests
         test/lib/TestSelfDeleteObserver.h
         test/lib/TestPriorityObserver.h
         weatherStationDuo/lib/WeatherStationDuo.hpp
+        weatherStationDuo/lib/observer/statsDisplay/WeatherStationDisplay.cpp weatherStationDuo/lib/observer/statsDisplay/WeatherStationDisplay.h weatherStationDuo/lib/statsView/WeatherStationView.cpp weatherStationDuo/lib/statsView/WeatherStationView.h
+        weatherStationDuo/lib/WeatherData/WeatherStationData.h  weatherStationDuo/lib/WeatherData/WeatherStationData.cpp
         )
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
@@ -63,7 +65,9 @@ add_executable(weatherStationDuo
         lib/statsView/StatsView.cpp
         lib/statsView/StatsView.h
     weatherStationDuo/main.cpp weatherStationDuo/lib/WeatherStationDuo.hpp
-)
+        weatherStationDuo/lib/observer/statsDisplay/WeatherStationDisplay.cpp weatherStationDuo/lib/observer/statsDisplay/WeatherStationDisplay.h weatherStationDuo/lib/statsView/WeatherStationView.cpp weatherStationDuo/lib/statsView/WeatherStationView.h
+        weatherStationDuo/lib/WeatherData/WeatherStationData.h  weatherStationDuo/lib/WeatherData/WeatherStationData.cpp
+        )
 
 # weatherStationPro
 

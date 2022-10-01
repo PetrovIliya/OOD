@@ -1,30 +1,39 @@
 #ifndef LW2_WEATHERSTATIONDUO_HPP
 #define LW2_WEATHERSTATIONDUO_HPP
 
-#include "../../lib/weatherData/WeatherData.h"
+#include <utility>
+
+#include "../../lib/observers/IObserver.h"
+#include "WeatherData/WeatherStationData.h"
+#include "WeatherData/WeatherStationInfo.h"
 
 class WeatherStationDuo
 {
 public:
-    void RegisterObserver(IObserver<WeatherInfo> & observer, int priority)
+	WeatherStationDuo(WeatherStationData insideData, WeatherStationData outsideData):
+		insideData(std::move(insideData)),
+		outsideData(std::move(outsideData))
+	{}
+
+    void RegisterObserver(IObserver<WeatherStationInfo> & observer, int priority)
     {
         insideData.RegisterObserver(observer, priority);
         outsideData.RegisterObserver(observer, priority);
     }
 
-    WeatherData& GetInsideData()
+	WeatherStationData& GetInsideData()
     {
         return insideData;
     }
 
-    WeatherData& GetOutsideData()
+	WeatherStationData& GetOutsideData()
     {
         return outsideData;
     }
 
 private:
-    WeatherData insideData;
-    WeatherData outsideData;
+	WeatherStationData insideData;
+	WeatherStationData outsideData;
 };
 
 

@@ -68,9 +68,12 @@ TEST_CASE( "Self delete", "[self-delete]" ) {
 
 TEST_CASE("Duo station", "duo-station")
 {
-    WeatherStationDuo ws;
+	WeatherStationData insideData;
+	WeatherStationData outsideData;
 
-    TestObserver<WeatherInfo> firstObserver;
+	WeatherStationDuo ws(insideData, outsideData);
+
+    TestObserver<WeatherStationInfo> firstObserver;
     ws.RegisterObserver(firstObserver, 1);
 
     ws.GetInsideData().SetMeasurements(1, 2, 3);

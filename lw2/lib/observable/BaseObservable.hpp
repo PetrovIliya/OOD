@@ -27,7 +27,7 @@ public:
 
     void NotifyObservers() override
     {
-        clearRemoveList();
+        clearRemoveList();//Можно сделать проще
         T data = GetChangedData();
         for (auto & observer : m_observers)
         {
