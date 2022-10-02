@@ -1,8 +1,8 @@
 #ifndef TASK1_SYRUP_H
 #define TASK1_SYRUP_H
 
-#include "../condimentDecorator/CondimentDecorator.h"
 #include "SyrupType.hpp"
+#include "../../decorator/condimentDecorator/CondimentDecorator.h"
 
 class Syrup : public CondimentDecorator
 {

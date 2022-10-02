@@ -1,7 +1,7 @@
 #include "Tea.h"
 
-Tea::Tea()
-        :BaseBeverage("Tea")
+Tea::Tea(const std::string & description)
+        :BaseBeverage(description)
 {}
 
 double Tea::GetCost() const

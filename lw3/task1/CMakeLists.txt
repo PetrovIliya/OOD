@@ -16,8 +16,8 @@ add_executable(task1
         lib/beverage/tea/Tea.h
         lib/beverage/milkshake/Milkshake.cpp
         lib/beverage/milkshake/Milkshake.h
-        lib/condiments/condimentDecorator/CondimentDecorator.cpp
-        lib/condiments/condimentDecorator/CondimentDecorator.h
+        lib/decorator/condimentDecorator/CondimentDecorator.cpp
+        lib/decorator/condimentDecorator/CondimentDecorator.h
         lib/condiments/cinnamon/Cinnamon.cpp
         lib/condiments/cinnamon/Cinnamon.h
         lib/condiments/lemon/Lemon.cpp
@@ -29,4 +29,16 @@ add_executable(task1
         lib/condiments/syrup/Syrup.h
         lib/condiments/syrup/SyrupType.hpp
         lib/condiments/chocolateCrumbs/ChocolateCrumbs.cpp
-        lib/condiments/chocolateCrumbs/ChocolateCrumbs.h lib/condiments/coconutFlakes/CoconutFlakes.cpp lib/condiments/coconutFlakes/CoconutFlakes.h)
+        lib/condiments/chocolateCrumbs/ChocolateCrumbs.h
+        lib/condiments/coconutFlakes/CoconutFlakes.cpp
+        lib/condiments/coconutFlakes/CoconutFlakes.h
+        lib/condiments/doublePortion/DoublePortion.cpp
+        lib/condiments/doublePortion/DoublePortion.h
+        lib/beverage/tea/strawberryTea/StrawberryTea.cpp
+        lib/beverage/tea/strawberryTea/StrawberryTea.h
+        lib/beverage/tea/greenTea/GreenTea.cpp
+        lib/beverage/tea/greenTea/GreenTea.h
+        lib/beverage/tea/earlGreyTea/EarlGreyTea.cpp
+        lib/beverage/tea/earlGreyTea/EarlGreyTea.h
+        lib/beverage/tea/blackTea/BlackTea.cpp
+        lib/beverage/tea/blackTea/BlackTea.h lib/beverage/milkshake/MilkshakePortion.hpp)

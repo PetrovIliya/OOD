@@ -1,8 +1,8 @@
 #ifndef TASK1_ICECUBES_H
 #define TASK1_ICECUBES_H
 
-#include "../condimentDecorator/CondimentDecorator.h"
 #include "IceCubeType.hpp"
+#include "../../decorator/condimentDecorator/CondimentDecorator.h"
 
 class IceCubes : public CondimentDecorator
 {

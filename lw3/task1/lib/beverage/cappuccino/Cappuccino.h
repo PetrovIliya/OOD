@@ -5,6 +5,7 @@
 
 class Cappuccino : public Coffee
 {
+public:
     Cappuccino();
 
     double GetCost() const override;
