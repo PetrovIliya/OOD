@@ -44,4 +44,10 @@ add_executable(task1
         lib/beverage/tea/blackTea/BlackTea.h
         lib/beverage/milkshake/MilkshakePortionType.hpp
         lib/decorator/portion/milkSnakePortion/MilkSnakePortion.cpp
-        lib/decorator/portion/milkSnakePortion/MilkSnakePortion.h lib/decorator/portion/portionDecorator/PortionDecorator.cpp lib/decorator/portion/portionDecorator/PortionDecorator.h)
+        lib/decorator/portion/milkSnakePortion/MilkSnakePortion.h
+        lib/decorator/portion/portionDecorator/PortionDecorator.cpp
+        lib/decorator/portion/portionDecorator/PortionDecorator.h
+        lib/decorator/condiments/cream/Cream.cpp
+        lib/decorator/condiments/cream/Cream.h
+        lib/decorator/condiments/chocolate/Chocolate.cpp
+        lib/decorator/condiments/chocolate/Chocolate.h lib/decorator/condiments/liquor/Liquor.cpp lib/decorator/condiments/liquor/Liquor.h lib/decorator/condiments/liquor/LiquorType.hpp)
