@@ -1,8 +1,8 @@
 #ifndef TASK1_CHOCOLATECRUMBS_H
 #define TASK1_CHOCOLATECRUMBS_H
 
-#include "../../beverage/IBeverage.h"
-#include "../../decorator/condimentDecorator/CondimentDecorator.h"
+#include "../../../beverage/IBeverage.h"
+#include "../condimentDecorator/CondimentDecorator.h"
 
 class ChocolateCrumbs : public CondimentDecorator
 {

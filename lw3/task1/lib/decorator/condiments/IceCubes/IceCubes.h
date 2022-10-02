@@ -2,7 +2,7 @@
 #define TASK1_ICECUBES_H
 
 #include "IceCubeType.hpp"
-#include "../../decorator/condimentDecorator/CondimentDecorator.h"
+#include "../condimentDecorator/CondimentDecorator.h"
 
 class IceCubes : public CondimentDecorator
 {

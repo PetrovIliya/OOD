@@ -2,7 +2,7 @@
 #define TASK1_SYRUP_H
 
 #include "SyrupType.hpp"
-#include "../../decorator/condimentDecorator/CondimentDecorator.h"
+#include "../condimentDecorator/CondimentDecorator.h"
 
 class Syrup : public CondimentDecorator
 {

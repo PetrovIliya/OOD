@@ -1,7 +1,7 @@
 #ifndef TASK1_CINNAMON_H
 #define TASK1_CINNAMON_H
 
-#include "../../decorator/condimentDecorator/CondimentDecorator.h"
+#include "../condimentDecorator/CondimentDecorator.h"
 
 class Cinnamon : public CondimentDecorator
 {

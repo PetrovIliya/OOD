@@ -16,24 +16,24 @@ add_executable(task1
         lib/beverage/tea/Tea.h
         lib/beverage/milkshake/Milkshake.cpp
         lib/beverage/milkshake/Milkshake.h
-        lib/decorator/condimentDecorator/CondimentDecorator.cpp
-        lib/decorator/condimentDecorator/CondimentDecorator.h
-        lib/condiments/cinnamon/Cinnamon.cpp
-        lib/condiments/cinnamon/Cinnamon.h
-        lib/condiments/lemon/Lemon.cpp
-        lib/condiments/lemon/Lemon.h
-        lib/condiments/IceCubes/IceCubeType.hpp
-        lib/condiments/IceCubes/IceCubes.cpp
-        lib/condiments/IceCubes/IceCubes.h
-        lib/condiments/syrup/Syrup.cpp
-        lib/condiments/syrup/Syrup.h
-        lib/condiments/syrup/SyrupType.hpp
-        lib/condiments/chocolateCrumbs/ChocolateCrumbs.cpp
-        lib/condiments/chocolateCrumbs/ChocolateCrumbs.h
-        lib/condiments/coconutFlakes/CoconutFlakes.cpp
-        lib/condiments/coconutFlakes/CoconutFlakes.h
-        lib/condiments/doublePortion/DoublePortion.cpp
-        lib/condiments/doublePortion/DoublePortion.h
+        lib/decorator/condiments/condimentDecorator/CondimentDecorator.cpp
+        lib/decorator/condiments/condimentDecorator/CondimentDecorator.h
+        lib/decorator/condiments/cinnamon/Cinnamon.cpp
+        lib/decorator/condiments/cinnamon/Cinnamon.h
+        lib/decorator/condiments/lemon/Lemon.cpp
+        lib/decorator/condiments/lemon/Lemon.h
+        lib/decorator/condiments/IceCubes/IceCubeType.hpp
+        lib/decorator/condiments/IceCubes/IceCubes.cpp
+        lib/decorator/condiments/IceCubes/IceCubes.h
+        lib/decorator/condiments/syrup/Syrup.cpp
+        lib/decorator/condiments/syrup/Syrup.h
+        lib/decorator/condiments/syrup/SyrupType.hpp
+        lib/decorator/condiments/chocolateCrumbs/ChocolateCrumbs.cpp
+        lib/decorator/condiments/chocolateCrumbs/ChocolateCrumbs.h
+        lib/decorator/condiments/coconutFlakes/CoconutFlakes.cpp
+        lib/decorator/condiments/coconutFlakes/CoconutFlakes.h
+        lib/decorator/portion/doublePortion/DoublePortion.cpp
+        lib/decorator/portion/doublePortion/DoublePortion.h
         lib/beverage/tea/strawberryTea/StrawberryTea.cpp
         lib/beverage/tea/strawberryTea/StrawberryTea.h
         lib/beverage/tea/greenTea/GreenTea.cpp
@@ -41,4 +41,7 @@ add_executable(task1
         lib/beverage/tea/earlGreyTea/EarlGreyTea.cpp
         lib/beverage/tea/earlGreyTea/EarlGreyTea.h
         lib/beverage/tea/blackTea/BlackTea.cpp
-        lib/beverage/tea/blackTea/BlackTea.h lib/beverage/milkshake/MilkshakePortion.hpp)
+        lib/beverage/tea/blackTea/BlackTea.h
+        lib/beverage/milkshake/MilkshakePortionType.hpp
+        lib/decorator/portion/milkSnakePortion/MilkSnakePortion.cpp
+        lib/decorator/portion/milkSnakePortion/MilkSnakePortion.h lib/decorator/portion/portionDecorator/PortionDecorator.cpp lib/decorator/portion/portionDecorator/PortionDecorator.h)

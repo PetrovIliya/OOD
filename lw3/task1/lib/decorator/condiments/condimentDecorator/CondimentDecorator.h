@@ -1,7 +1,7 @@
 #ifndef TASK1_CONDIMENTDECORATOR_H
 #define TASK1_CONDIMENTDECORATOR_H
 
-#include "../../beverage/IBeverage.h"
+#include "../../../beverage/IBeverage.h"
 
 class CondimentDecorator : public IBeverage
 {
@@ -15,7 +15,7 @@ public:
     virtual double GetCondimentCost()const = 0;
 
 protected:
-    CondimentDecorator(IBeveragePtr && beverage);
+    explicit CondimentDecorator(IBeveragePtr && beverage);
 
 private:
     IBeveragePtr m_beverage;
