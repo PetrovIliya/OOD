@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <functional>
 #include "lib/beverage/IBeverage.h"
 #include "lib/beverage/coffee/Coffee.h"
