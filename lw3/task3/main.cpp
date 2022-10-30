@@ -54,15 +54,10 @@ void Transform(const vector<string>& args)
         }
     }
 
-    bool isContinue = true;
-    while (isContinue)
+    while (!input->IsEOF())
     {
         uint8_t ch = input->ReadByte();
-        isContinue = !input->IsEOF();
-        if (isContinue)
-        {
-            output->WriteByte(ch);
-        }
+        output->WriteByte(ch);
     };
 }
 
